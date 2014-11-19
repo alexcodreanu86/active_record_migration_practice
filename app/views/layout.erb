@@ -7,11 +7,25 @@
     See: http://necolas.github.com/normalize.css/
   -->
   <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
   <link rel="stylesheet" href="/css/application.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type="text/javascript" src="/js/app.js"></script>
 
   <title></title>
 </head>
 <body>
+  <%= erb :_errors %>
+  <div class="container">
+  <% if current_user_id %>
+    <a href="/users/logout">Logout</a>
+  <% end %>
+
   <%= yield %>
+</div>
 </body>
 </html>

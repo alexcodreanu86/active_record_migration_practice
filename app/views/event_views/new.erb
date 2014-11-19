@@ -1,0 +1,13 @@
+<h1>Create new event form:</h1>
+
+<form action="/events/new" method="POST">
+  <label for="e_name">Event name: </label><br>
+  <input type="text" id="e_name" name="event[name]"><br>
+  <label for="e_location">Event location: </label><br>
+  <input type="text" id="e_location" name="event[location]"><br>
+  <label for="e_starts">Event starting time and date: </label><br>
+  <input type="datetime-local" id="e_starts" name="event[starts_at]"><br>
+  <label for="e_ends">Event ending time and date: </label><br>
+  <input type="datetime-local" id="e_ends" name="event[ends_at]"><br>
+  <input type="submit" value="Create Event">
+</form>

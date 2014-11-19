@@ -1,0 +1,14 @@
+<h1>Edit your event</h1>
+
+<form action="/events/edit/<%=@event.id %>" id="edit_form" method="POST">
+  <label for="e_name">Event name: </label><br>
+  <input type="text" id="e_name"  value="<%= @event.name%>"name="event[name]"><br>
+  <label for="e_location">Event location: </label><br>
+  <input type="text" id="e_location" value="<%= @event.location%>" name="event[location]"><br>
+  <label for="e_starts">Event starting time and date: </label><br>
+  <input type="datetime-local" id="e_starts" value="<%= @event.starts_at%>" name="event[starts_at]"><br>
+  <label for="e_ends">Event ending time and date: </label><br>
+  <input type="datetime-local" id="e_ends" value="<%= @event.ends_at%>" name="event[ends_at]"><br>
+  <input type="submit" value="Save Changes">
+</form><br>
+

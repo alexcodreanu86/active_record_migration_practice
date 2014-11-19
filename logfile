@@ -1,0 +1,124 @@
+LOG:  database system was shut down at 2014-03-05 21:02:57 CST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+WARNING:  corrupted statistics file "pg_stat_tmp/global.stat"
+FATAL:  role "trying" does not exist
+FATAL:  role "trying" does not exist
+FATAL:  role "trying" does not exist
+FATAL:  role "trying" does not exist
+FATAL:  role "trying" does not exist
+FATAL:  role "trying" does not exist
+FATAL:  role "trying" does not exist
+FATAL:  role "trying" does not exist
+FATAL:  role "trying" does not exist
+FATAL:  role "trying" does not exist
+FATAL:  role "trying" does not exist
+FATAL:  role "trying" does not exist
+FATAL:  role "scheduler" does not exist
+FATAL:  role "scheduler" does not exist
+FATAL:  role "scheduler" does not exist
+FATAL:  role "scheduler" does not exist
+FATAL:  role "scheduler" does not exist
+FATAL:  role "scheduler" does not exist
+FATAL:  role "Alex" does not exist
+FATAL:  role "Alex" does not exist
+ERROR:  syntax error at or near ""help"" at character 1
+STATEMENT:  "help"
+	;
+ERROR:  syntax error at or near ""help"" at character 1
+STATEMENT:  "help"
+	;
+FATAL:  role "Alex" does not exist
+FATAL:  role "Alex" does not exist
+ERROR:  syntax error at or near "ROLES" at character 1
+STATEMENT:  ROLES;
+ERROR:  syntax error at or near "exit" at character 1
+STATEMENT:  exit
+	;
+FATAL:  role "scheduler" does not exist
+FATAL:  role "scheduler" does not exist
+FATAL:  role "scheduler" does not exist
+FATAL:  role "scheduler" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+FATAL:  role "ENV[PG_USERNAME]" does not exist
+FATAL:  role "ENV[PG_USERNAME]" does not exist
+FATAL:  role "ENV['PG_USERNAME']" does not exist
+ERROR:  database "scheduler_dev" is being accessed by other users
+DETAIL:  There are 3 other sessions using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "scheduler_dev"
+ERROR:  database "scheduler_dev" already exists
+STATEMENT:  CREATE DATABASE "scheduler_dev" ENCODING = 'unicode'
+ERROR:  database "scheduler_dev" is being accessed by other users
+DETAIL:  There are 3 other sessions using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "scheduler_dev"
+ERROR:  database "scheduler_dev" already exists
+STATEMENT:  CREATE DATABASE "scheduler_dev" ENCODING = 'unicode'
+ERROR:  database "scheduler_dev" is being accessed by other users
+DETAIL:  There are 3 other sessions using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "scheduler_dev"
+WARNING:  corrupted statistics file "pg_stat_tmp/global.stat"
+ERROR:  syntax error at or near "%" at character 52
+STATEMENT:  SELECT "events".* FROM "events"  WHERE (title LIKE %'afalshfajkshf'%)
+ERROR:  syntax error at or near "%" at character 50
+STATEMENT:  SELECT COUNT(*) FROM "events"  WHERE (title LIKE %'afalshfajkshf'%)
+ERROR:  syntax error at or near "afalshfajkshf" at character 53
+STATEMENT:  SELECT COUNT(*) FROM "events"  WHERE (title LIKE '%'afalshfajkshf'%')
+FATAL:  role "Matt" does not exist
+ERROR:  syntax error at or near "%" at character 59
+STATEMENT:  SELECT "events".* FROM "events"  WHERE (events.title LIKE %otters%)
+FATAL:  role "Matt" does not exist
+FATAL:  role "Matt" does not exist
+ERROR:  database "scheduler_dev" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "scheduler_dev"
+FATAL:  database "scheduler_dev" does not exist
+ERROR:  database "learning_rails" already exists
+STATEMENT:  CREATE DATABASE "learning_rails" ENCODING = 'unicode'
+ERROR:  database "learning_rails" already exists
+STATEMENT:  CREATE DATABASE "learning_rails" ENCODING = 'unicode'
+FATAL:  database "blog_development" does not exist
+FATAL:  database "blog_development" does not exist
+ERROR:  database "blog_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "blog_development"
+ERROR:  column posts.desc does not exist at character 68
+STATEMENT:  SELECT "posts".* FROM "posts"   ORDER BY "posts"."created_at" ASC, "posts"."desc" ASC
+FATAL:  role "Matt" does not exist
+FATAL:  role "Matt" does not exist
+ERROR:  database "picture_parser_dev" already exists
+STATEMENT:  CREATE DATABASE "picture_parser_dev" ENCODING = 'unicode'
+ERROR:  database "picture_parser_dev" already exists
+STATEMENT:  CREATE DATABASE "picture_parser_dev" ENCODING = 'unicode'
+ERROR:  database "picture_parser_dev" already exists
+STATEMENT:  CREATE DATABASE "picture_parser_dev" ENCODING = 'unicode'
+ERROR:  database "picture_parser_test" already exists
+STATEMENT:  CREATE DATABASE "picture_parser_test" ENCODING = 'unicode'
+ERROR:  database "picture_parser_dev" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "picture_parser_dev"
+ERROR:  database "picture_parser_dev" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "picture_parser_dev"
+ERROR:  column "user_id" of relation "pictures" already exists
+STATEMENT:  ALTER TABLE "pictures" ADD COLUMN "user_id" integer
+ERROR:  column "user_id" of relation "pictures" already exists
+STATEMENT:  ALTER TABLE "pictures" ADD COLUMN "user_id" integer
+FATAL:  database "user_practice_development" does not exist
+WARNING:  corrupted statistics file "pg_stat_tmp/global.stat"
+FATAL:  role "omniauth_facebook" does not exist
+FATAL:  role "omniauth_facebook" does not exist
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down

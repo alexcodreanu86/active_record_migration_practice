@@ -112,6 +112,30 @@ namespace :db do
     require APP_ROOT.join('db', 'seeds.rb')
   end
 
+  desc "reset the database"
+  task :reset do
+    puts "resetting the frakking db"
+    exec("bundle exec rake db:drop && bundle exec rake db:set")
+  end
+
+  desc "set the database"
+  task :set do
+    puts "Create-Migrate-Seed...ALL AT ONCE"
+    exec("bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:seed")
+  end
+
+  desc "create/migrate/seed db and open the console"
+  task :conset do
+    puts "Bundle, Setting db, and entering console"
+    exec("bundle update && bundle exec rake db:drop && bundle exec rake console")
+  end
+
+  desc "reset the db and opening the console"
+  task :conreset do
+    puts "Reset to Console..."
+    exec("bundle exec rake db:reset && bundle exec rake console")
+  end
+
   desc "Returns the current schema version number"
   task :version do
     puts "Current version: #{ActiveRecord::Migrator.current_version}"

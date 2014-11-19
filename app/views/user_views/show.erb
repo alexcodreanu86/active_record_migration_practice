@@ -1,0 +1,12 @@
+<h1>Welcome <%= current_user.first_name + " " + current_user.last_name %></h1>
+<a href="/events/new"><button>Create event</button></a>
+
+<h2>Events organized by you: </h2>
+<ul>
+
+<% current_user.created_events.each do |event| %> 
+  <li><a data-event-id="<%=event.id%>" class="edit" href="/events/edit/<%=event.id%>"> <%= event.name %> </a><br> Scheduled on: <%= event.starts_at %></li><a class="delete" href="/events/delete/<%= event.id %>"><button>Delete event</button></a>
+  <div id="<%= event.id %>"></div>
+
+<% end %>
+</ul>
